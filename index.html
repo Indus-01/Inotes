@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+	<title>Notes</title>
+</head>
+<body>
+	<style type="text/css">
+		body{
+			font-family: 'Aldrich';
+			background-color: #6a52cc;
+		}
+		.form{
+			padding-bottom: 5px;
+			margin-top: 20px;
+			transition: all 0.5s linear;
+			padding-top: 10px;
+			font-family: 'Aldrich';
+			margin-left: auto;
+			margin-right: auto;
+			width: 1500px;
+			min-height: 800px;
+			background-color: white;
+			border-radius: 20px;
+		}
+		.form #t-title{
+			margin-left: 25px;
+		}
+		.form button{
+			margin-top: 20px;
+			border-radius: 10px;
+			width: 15%;
+			height: 45px;
+			border: 1px solid black;
+			background-color: white;
+			color: black;
+			box-shadow: 2px 2px 3px #f5e50f;
+		}
+		.form input{
+			font-size: 20px;
+			border-radius: 20px;
+			width: 40%;
+			height: 40px;
+			border: 2px solid black;
+			background-color: transparent;
+			color: black;
+		}
+		.form:hover{
+			box-shadow: 2px 2px 2px black;
+		}
+		h1{
+			margin-left: 20px;
+			margin-top: 30px;
+		}
+		#tasks{
+			margin-top: 20px;
+			margin-left: 25px;
+		}
+		.task{
+			margin-bottom: 10px;
+			margin-top: 10px;
+			margin-left: 25px;
+			display: flex;
+			flex-direction: row;
+			width: 1100px;
+			height: 100px;
+			border-radius: 10px;
+			background-color: #ba89e8;
+		}
+		.task h3,h4,button{
+			margin-left: 10px;	
+		}
+		.task button{
+			border-radius: 50%;
+			width: 48px;
+			height: 48px;
+		}
+		#theme-toogle{
+			box-shadow: 2px 1px 2px #ba89e8;
+			border-radius: 50%;
+			width: 48px;
+			height: 48px;
+		}
+		.header{
+			display: flex;
+			flex-direction: row;
+		}
+		.header h1{
+			margin-left: 20px;
+			margin-top: 20px;
+		}
+		.header button{
+			margin-right: 0%;
+			margin-left: 80%;
+		}
+	</style>
+	<div class="form">
+		<div class="header">
+			<h1>TODO-LIST</h1>
+			<button id="theme-toogle" onclick="darkLight()"><i class="fa fa-moon"></i></button>
+		</div>
+	<form>
+		<input type="text" placeholder="Enter title of note" id="t-title">
+		<input type="text" placeholder="Enter body of note" id='t-body'>
+		<button id="t-button" type="button" onclick='makeTodo()'>Make todo</button>
+	</form>
+	<div id="tasks">
+		<h2>Latest tasks:</h2>
+	</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="script2.js"></script>
+</body>
+</html>
