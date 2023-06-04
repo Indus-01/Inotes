@@ -1,6 +1,6 @@
 function makeTodo(){
 			if (document.querySelector("#t-title").value <= '' & document.querySelector("#t-body").value <= '') {
-				confirm("Enter name and body!!")
+				alert("Enter title and task !!")
 			} else {
 				var tasklist = document.getElementById("tasks");
 			tasklist.innerHTML += `
