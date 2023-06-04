@@ -6,7 +6,8 @@ var dark = false;
 			if(!dark){
 				a.style.background = 'black';
 				a.style.color = 'white';
-				document.querySelector('#theme-switcher').className = 'fa fa-sun';
+				document.querySelector('#theme-switcher').ckassList.remove('fa fa-moon');
+				document.querySelector('#theme-switcher').classList.add('fa fa-sun');
 				a.innerHTML += 	`<style>::placeholder{color: white;}.form input{
 			font-size: 20px;
 			border-radius: 20px;
@@ -21,7 +22,8 @@ var dark = false;
 				i2.style.border = '2px solid black';
 				a.style.background = 'white';
 				a.style.color = 'black';
-				document.querySelector('#theme-switcher').className = 'fa fa-moon';
+				document.querySelector('#theme-switcher').ckassList.remove('fa fa-sun');
+				document.querySelector('#theme-switcher').classList.add('fa fa-moon');
 				a.innerHTML += 	`<style>::placeholder{color: black;}
 				.form input{
 			font-size: 20px;
