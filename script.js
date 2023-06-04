@@ -14,7 +14,7 @@ var dark = false;
 			width: 40%;
 			height: 40px;
 			border: 2px solid white;
-			background-color: transparent;
+			background-color: darkgrey;
 			color: white;
 		}</style>`;
 			} else{
