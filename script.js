@@ -17,6 +17,8 @@ var dark = false;
 			background-color: darkgrey;
 			color: white;
 		}</style>`;
+				i1.style.border = '2px solid black';
+				i2.style.border = '2px solid black';
 			} else{
 				i1.style.border = '2px solid black';
 				i2.style.border = '2px solid black';
