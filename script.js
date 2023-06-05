@@ -6,6 +6,9 @@ document.querySelector('#button').onclick = function(){
           <button class='finished' id='finished'>completed</button>
         </div>
     `;
+    document.querySelector('#finished').onclick = function(){
+        document.querySelector('.task').classList.add('deleted');
+    }
 };
 
 
