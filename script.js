@@ -6,6 +6,7 @@ document.querySelector('#button').onclick = function(){
           <button class='finished' id='finished'  onclick='this.parentElement.remove()'>completed</button>
         </div>
     `;
+    document.querySelector('#input').value = '';
 };
 
 
